@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html { color-scheme: dark; }
+body { background: #020617; color: #e2e8f0; }
+.react-flow__node { cursor: pointer; }
+.react-flow__controls button { background: #0f172a; border-color: #334155; fill: #cbd5e1; }
+.react-flow__edge-text { fill: #94a3b8; font-size: 10px; }
+.react-flow__edge-textbg { fill: #020617; }
+.react-flow__attribution { background: transparent; }
+.react-flow__attribution a { color: #475569; }
+.react-flow__controls button:hover { background: #1e293b; }
+
+/* Tactile press feedback on every control (emil-design-eng: buttons must feel responsive). */
+button { transition: transform 120ms ease-out, filter 120ms ease-out, background-color 120ms ease-out; }
+button:not(:disabled):active { transform: scale(0.97); }
+@media (prefers-reduced-motion: reduce) { button, button:active { transition: none; transform: none; } }

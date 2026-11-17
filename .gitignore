@@ -1,0 +1,28 @@
+# secrets
+.env
+.env.*
+!.env.example
+
+# python
+.venv/
+__pycache__/
+*.pyc
+
+# sqlite state
+*.db
+*.db-wal
+*.db-shm
+
+# run output
+backend/artifacts/*
+!backend/artifacts/.gitkeep
+backend/uploads/
+*.log
+
+# node
+node_modules/
+.next/
+next-env.d.ts
+*.tsbuildinfo
+
+.DS_Store
